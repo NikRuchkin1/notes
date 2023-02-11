@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './output.css'
+import HeaderModule from "./modules/header";
 
 function App() {
   return (
     <div className="App">
-
+      <HeaderModule/>
     </div>
   );
 }

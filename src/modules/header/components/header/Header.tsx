@@ -1,8 +1,8 @@
 import React from 'react'
 
 function Header() {
-    return <div>
-
+    return <div className="sm (640px) flex justify-center">
+        <button>123</button>
     </div>
 }
 
