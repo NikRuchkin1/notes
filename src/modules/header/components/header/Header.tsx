@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from "../../../../components/button/Button";
+import Button from "@components/button";
 
 function Header() {
     return <div className="sm (640px) flex justify-center blue">
