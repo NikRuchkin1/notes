@@ -1,8 +1,10 @@
 import React from 'react'
+import Button from "../../../../components/button/Button";
 
 function Header() {
-    return <div className="sm (640px) flex justify-center">
-        <button>123</button>
+    return <div className="sm (640px) flex justify-center blue">
+        <div>Ebat you slil bobla...</div>
+        <Button>+new</Button>
     </div>
 }
 
