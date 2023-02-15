@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function NotesList() {
-    return <div>
+  return <div>
 
-    </div>
+  </div>;
 }
 
-export default NotesList
+export default NotesList;

@@ -1,11 +1,8 @@
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./public/**/*.{html}",
   ],
   theme: {
     screens: {
@@ -24,6 +21,7 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'greenLight': '#34D399',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
@@ -31,12 +29,6 @@ module.exports = {
     },
     extend: {
       spacing: {
-        '1': '8px',
-        '2': '12px',
-        '3': '16px',
-        '4': '24px',
-        '5': '32px',
-        '6': '48px',
       },
       borderRadius: {
         '4xl': '2rem',

@@ -1,1 +1,1 @@
-export { default } from './MainModule';
+export { default } from "./MainModule";

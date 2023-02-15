@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
-    "path": {
-      "@components": ["components/"],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"]
     },
     "target": "es5",
     "lib": [
@@ -25,6 +25,9 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "@types/**/*.d.ts"
+  ],
+  "exclude": ["node_modules"]
 }

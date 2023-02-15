@@ -1,11 +1,12 @@
-import React from 'react'
-import Button from "@components/button";
+import React from "react";
+import ButtonGreen from "@components/ButtonGreen";
 
 function Header() {
-    return <div className="sm (640px) flex justify-center red">
-        <div>Ebat you slil bobla...</div>
-        <Button>+new</Button>
-    </div>
+  const style = 'rounded text-gray-light py-2 px-2'
+  return <div className="max-w-7xl flex justify-between">
+    <div>Ebat you slil babla...</div>
+    <ButtonGreen style={style}>+new</ButtonGreen>
+  </div>;
 }
 
-export default Header
+export default Header;
