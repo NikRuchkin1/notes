@@ -1,6 +1,6 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import {setOpenAddRowForm, selectFormState} from "@store/reducers/AddRowReducer";
+import { selectFormState } from "@store/reducers/AddRowReducer";
 import AddRowForm from "./components/AddRowForm";
 
 function AddNewForm() {
