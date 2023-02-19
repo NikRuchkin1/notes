@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.{html}",
   ],
+  disable: 'class',
   theme: {
     screens: {
       sm: '480px',
@@ -24,6 +25,7 @@ module.exports = {
       'greenLight': '#34D399',
       'transparent': 'transparent',
       'grey800': '#1F2937',
+      'red600': '#DC2626',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

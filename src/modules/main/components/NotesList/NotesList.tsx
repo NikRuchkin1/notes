@@ -1,19 +1,10 @@
 import React from "react";
-import { selectFormState } from "@store/reducers/AddFormReducer/AddRowReducer";
-import {useSelector} from "react-redux";
-
-const tableData = [
-    {
-        thing: 'test',
-        bath: 123,
-        rub: 123,
-        cad: 123,
-        usa: 123,
-    }
-]
+import { selectFormState, deleteRowDataOfTable } from "@store/reducers/AddFormReducer/AddRowReducer";
+import {useDispatch, useSelector} from "react-redux";
+import trash from './img/trash.png'
 
 function NotesList() {
-
+    const dispatch = useDispatch()
     const isOpenAddRowForm = useSelector(selectFormState)
 
   return <div className="mt-10">
@@ -25,10 +16,10 @@ function NotesList() {
         <div className="w-3/12 text-center border border-orange">$ usa</div>
       </div>
       <div className="mt-3">
-          {tableData && tableData.map(
+          {isOpenAddRowForm.dataTable && isOpenAddRowForm.dataTable.map(
               (item, idx)=> {
                   return (
-                      <div key={idx} className="flex w-full  text-greenLight font-light text-base">
+                      <div key={idx} className="flex w-full  text-greenLight font-light text-base relative">
                           <div className="w-3/12 text-center border">
                               {item.thing}
                           </div>
@@ -44,6 +35,12 @@ function NotesList() {
                           <div className="w-3/12 text-center border border-orange">
                               {item.usa}
                           </div>
+                          <img
+                              src={trash}
+                              alt='trash'
+                              className='absolute w-6 right-0 top-1px'
+                              onClick={()=> dispatch(deleteRowDataOfTable(idx))}
+                          />
                       </div>
                   )
               }

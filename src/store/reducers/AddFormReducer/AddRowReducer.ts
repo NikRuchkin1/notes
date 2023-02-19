@@ -14,17 +14,20 @@ export const AddRowReducer = createSlice({
             state.dataTable = [{
                 'thing': action.payload.thing,
                 'bath': action.payload.bath,
-                'rub': action.payload.rub,
-                'cad': action.payload.cad,
-                'usa': action.payload.usa,
+                'rub': '0',
+                'cad': '0',
+                'usa': '0',
             }, ...state.dataTable]
         },
         setOpenAddRowForm: (state, action) => {
             state.openAddRowForm = action.payload
         },
+        deleteRowDataOfTable: (state, action) => {
+            state.dataTable.splice(action.payload, 1)
+        },
     },
 })
 
-export const { setValueOfRow, setOpenAddRowForm } = AddRowReducer.actions
+export const { setValueOfRow, setOpenAddRowForm, deleteRowDataOfTable } = AddRowReducer.actions
 export const selectFormState = (state:FormReducer)  => state.AddRowReducer
 export default AddRowReducer.reducer

@@ -6,6 +6,7 @@
     "@babel/core": "^7.16.0",
     "@headlessui/react": "^1.7.10",
     "@heroicons/react": "^2.0.15",
+    "@hookform/resolvers": "^2.9.11",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@reduxjs/toolkit": "^1.9.2",
     "@svgr/webpack": "^5.5.0",
@@ -64,7 +65,8 @@
     "webpack": "^5.64.4",
     "webpack-dev-server": "^4.6.0",
     "webpack-manifest-plugin": "^4.0.2",
-    "workbox-webpack-plugin": "^6.4.1"
+    "workbox-webpack-plugin": "^6.4.1",
+    "yup": "^1.0.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
