@@ -3,6 +3,7 @@ import "./App.css";
 import "./output.css";
 import HeaderModule from "./modules/header";
 import MainModule from "./modules/main";
+import AddNewForm from "./modules/formModal";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <div className="App m-auto max-w-7xl pt-3 px-4">
           <HeaderModule/>
           <MainModule/>
+          <AddNewForm/>
         </div>
       </div>
   );
