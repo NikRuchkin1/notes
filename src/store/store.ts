@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import AddRowReducer from "./reducers/AddRowReducer";
+import AddRowReducer from "./reducers/AddFormReducer/AddRowReducer";
 
 export const store = configureStore({
     reducer: {

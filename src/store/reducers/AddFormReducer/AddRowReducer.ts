@@ -1,18 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
-
-export interface FormState {
-    thing: string,
-    value: number,
-    openAddRowForm: boolean
-}
-
-interface FormReducer {
-    AddRowReducer: FormState
-}
+import {FormState, FormReducer } from './type'
 
 const initialState: FormState = {
-    thing: "",
-    value: 0,
+    dataTable: [],
     openAddRowForm: false,
 }
 
@@ -21,8 +11,13 @@ export const AddRowReducer = createSlice({
     initialState,
     reducers: {
         setValueOfRow: (state, action) => {
-            state.thing = action.payload.thing
-            state.value = action.payload.value
+            state.dataTable = [{
+                'thing': action.payload.thing,
+                'bath': action.payload.bath,
+                'rub': action.payload.rub,
+                'cad': action.payload.cad,
+                'usa': action.payload.usa,
+            }, ...state.dataTable]
         },
         setOpenAddRowForm: (state, action) => {
             state.openAddRowForm = action.payload

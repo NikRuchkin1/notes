@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonGreen from "@components/ButtonGreen";
 import {useDispatch} from "react-redux";
-import { setOpenAddRowForm } from "@store/reducers/AddRowReducer"
+import { setOpenAddRowForm } from "@store/reducers/AddFormReducer/AddRowReducer"
 
 function Header() {
   const dispatch = useDispatch()
